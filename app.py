@@ -6,7 +6,7 @@ from openpyxl import Workbook
 
 app = Flask(__name__)
 
-MATCH_URL = "https://crex.com/scoreboard/U5P/1JK/66th-Match/11/10/sco-vs-uae-66th-match-mens-cwc-league-2-2023-27/live"
+MATCH_URL = "https://crex.com/scoreboard/U5C/1SH/5th-Match/HQ/HR/ll-vs-nww-5th-match-ireland-interprovincial-1-day-cup-2025/live"
 
 def fetch_match_data():
     try:
