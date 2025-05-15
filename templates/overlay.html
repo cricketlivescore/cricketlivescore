@@ -1,15 +1,25 @@
-
 <!DOCTYPE html>
 <html>
-<head><style>
-body { margin: 0; background: transparent; color: white; font-family: sans-serif; }
-.overlay { font-size: 24px; padding: 10px; background: rgba(0,0,0,0.5); }
-</style></head>
+<head>
+    <title>Match Overlay</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .score-box {
+            margin-top: 50px;
+            font-size: 36px;
+        }
+    </style>
+</head>
 <body>
-<div class="overlay">
-  <strong>{{ data.team1 }} vs {{ data.team2 }}</strong><br>
-  {{ data.score }} | Overs: {{ data.overs }} | RR: {{ data.rr }} | Wickets: {{ data.wickets }}<br>
-  Ball Speed: {{ data.ball_speed }}
-</div>
+    <div class="score-box">
+        <div>{{ team1 }} vs {{ team2 }}</div>
+        <div>Score: {{ score }}</div>
+        <div>Commentary: {{ commentary }}</div>
+    </div>
 </body>
 </html>
